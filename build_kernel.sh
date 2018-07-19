@@ -55,12 +55,12 @@ make_menuconfig () {
 }
 
 make_kernel () {
-	image="zImage"
-	unset address
+	#image="zImage"
+	#unset address
 
 	#uImage, if you really really want a uImage, zreladdr needs to be defined on the build line going forward...
-	#image="uImage"
-	#address="LOADADDR=${ZRELADDR}"
+	image="uImage"
+	address="LOADADDR=${ZRELADDR}"
 
 	cd ${DIR}/KERNEL/
 	echo "-----------------------------"
