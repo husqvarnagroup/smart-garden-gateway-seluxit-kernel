@@ -53,7 +53,7 @@ dl_gcc_generic () {
 }
 
 gcc_toolchain () {
-	site="https://releases.linaro.org"
+	site="https://releases.linaro.org/archive"
 	case "${toolchain}" in
 	gcc_linaro_eabi_4_8)
 		#
